@@ -1,0 +1,17 @@
+#top {
+    width: 800px;
+    background-color: #CCCCCC;
+}
+
+#top p {
+    font-family: Arial;
+}
+
+#top img{
+    float: right;
+}
+
+#bottom{
+    width: 600px;
+    background-color: aquamarine;
+}
