@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana;
+}
+
+header {
+    width: 760px;
+}
+
+header img {
+    padding: 10px;
+}
+
+nav {
+    background-color: #000066;
+    color: white;
+    width: 740px;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+
+}
+
+nav a{
+    color: white;
+}
+
+#content {
+    width: 760px;
+}
+
+#content img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+#content h3 {
+    font-size: 20px;
+}
+
+#content p {
+    font-size: 17px;
+}
+
+footer {
+    width: 760px;
+    background-color: #000066;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+    text-align: center;
+}
