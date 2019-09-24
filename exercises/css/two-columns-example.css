@@ -1,0 +1,45 @@
+#wrapper {
+	max-width: 960px;
+}
+
+header {
+	background: #F9C;
+	height: 100px;
+}
+
+nav {
+	background: #3FC;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	width: 180px;
+	text-align: center;
+}
+
+#content {
+	background: red;
+	display: flex;
+}
+
+#main {
+	background-color: aqua;
+	width: 75%;
+}
+
+#sidebar {
+	width: 25%;
+	background: green;
+}
+
+footer {
+
+	background: #F93; 
+	margin: 0 auto 50px auto;
+}
