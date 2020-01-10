@@ -1,0 +1,34 @@
+body {
+    width: 760px;
+    font-family: Georgia;
+}
+header{
+    background-color: white;
+}
+header img{
+    padding: 10px;
+}
+nav {
+    padding: 4px 10px;
+    background-color: #596D7F;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content img{
+    float: right;
+}
+
+footer {
+    background-color: #596D7F;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
