@@ -1,0 +1,135 @@
+import sqlalchemy.exc
+import json
+import os
+import csv
+import psycopg2
+
+
+def main():
+    try:
+        conn = psycopg2.connect(dbname="ct310", user="marks", password="")
+        conn.autocommit = True
+        cur = conn.cursor()
+    #SAFETY TABLE
+
+        """with open("Safety.csv") as f:
+            csv_reader = csv.reader(f, delimiter=',')
+            start = True;
+            for row in csv_reader:
+                if start:
+                    start = False
+                    for name in row:
+                        name = name.replace(" ", "_")
+                        name = name.replace("-", "")
+                        headers.append(name)
+                else:
+                    command = ""
+                    command += 'INSERT INTO \"Safety\" VALUES ('
+                    start = True
+                    for val in row:
+                        val = val.replace("\'", "")
+                        val = val.replace("(23)", "")
+                        if start:
+                            start=False
+                        else:
+                            command += ", "
+                        try:
+                            if val != row[0]:
+                                num = float(val)
+                            command += val
+                        except ValueError as io:
+                            if val != "Not Available":
+                                command += "\'"
+                                command += val
+                                command += "\'"
+                            else:
+                                command += "NULL"
+                    command += ")"
+                    print command;
+                    cur.execute(command)
+
+
+        headers = []
+        with open("ClinicalCare.csv") as f:
+            csv_reader = csv.reader(f, delimiter=',')
+            start = True;
+            for row in csv_reader:
+                if start:
+                    start = False
+                    for name in row:
+                        name = name.replace(" ", "_")
+                        name = name.replace("-", "")
+                        headers.append(name)
+                else:
+                    command = ""
+                    command += 'INSERT INTO \"ClinicalCare\" VALUES ('
+                    start = True
+                    for val in row:
+                        val = val.replace("\'", "")
+                        val = val.replace("(23)", "")
+                        if start:
+                            start = False
+                        else:
+                            command += ", "
+                        try:
+                            if val != row[0]:
+                                num = float(val)
+                            command += val
+                        except ValueError as io:
+                            if val != "Not Available":
+                                command += "\'"
+                                command += val
+                                command += "\'"
+                            else:
+                                command += "NULL"
+                    command += ")"
+                    print command;
+                    cur.execute(command)
+    """
+        headers = []
+        with open("ExperienceDomain.csv") as f:
+            csv_reader = csv.reader(f, delimiter=',')
+            start = True;
+            for row in csv_reader:
+                if start:
+                    start = False
+                    for name in row:
+                        name = name.replace(" ", "_")
+                        name = name.replace("-", "")
+                        headers.append(name)
+                else:
+                    command = ""
+                    command += 'INSERT INTO \"ExperienceDomain\" VALUES ('
+                    start = True
+                    for val in row:
+                        val = val.replace("\'", "")
+                        val = val.replace("(23)", "")
+                        if start:
+                            start = False
+                        else:
+                            command += ", "
+                        try:
+                            if val != row[0]:
+                                num = float(val)
+                            command += val
+                        except ValueError as io:
+                            if val != "Not Available":
+                                command += "\'"
+                                command += val
+                                command += "\'"
+                            else:
+                                command += "NULL"
+                    command += ")"
+                    print command;
+                    cur.execute(command)
+
+    except IOError as e:
+        print e
+
+
+if __name__ == "__main__":
+    main()
+
+
+
+
