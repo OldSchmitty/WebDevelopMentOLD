@@ -1,2 +1,2 @@
-# JTC372 Web Design
-websites for class assignments
+# Web Projects
+Websites for class assignments
